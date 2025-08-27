@@ -1,0 +1,20 @@
+{
+  "name": "kokorolink-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/worker.ts",
+    "build": "tsc -p .",
+    "start": "node dist/worker.js"
+  },
+  "dependencies": {
+    "bullmq": "latest",
+    "ioredis": "latest",
+    "dotenv": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "ts-node-dev": "latest",
+    "typescript": "latest"
+  }
+}
